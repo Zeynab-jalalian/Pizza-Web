@@ -120,6 +120,7 @@ a{
 .header-top-right .instagram:hover{
    transform: scale(1.1);
 }
+/* header-top responsive */
 @media(max-width:1000px){
     .header-top {
         justify-content: space-between;
@@ -150,5 +151,125 @@ a{
     }
     .account-dropdown-menu{
         left:-100%;
+    }
+}
+/* Login */
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #750000cf;
+}
+.login{
+ background: white;
+ width: 500px;
+ padding: 50px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.login h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login .login-input{
+    width: 100%;
+    height: 45px;
+    margin: 30px auto;
+}
+.login-input input{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #000;
+}
+.login-btn{
+    width: 100%;
+    background: red;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover{
+    background: #000;
+}
+.login-forgot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.login-forgot p{
+    color: #505050;
+    font-size: 1.2rem;
+    user-select: none;
+}
+.login-forgot a{
+    color: red;
+    font-size: 1.2rem;
+}
+.login-forgot a:hover{
+    text-decoration: underline;
+}
+.login-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-account p{
+    color: #505050;
+    font-size: 1.2rem;
+    user-select: none;
+}
+.login-account a{
+    color: red;
+    font-size: 1.2rem;
+}
+.login-account a:hover{
+    text-decoration: underline;
+}
+/* responsive login */
+@media(max-width:550px){
+    .login{
+        width: 400px;
+    }
+}
+@media(max-width:430px){
+    .login{
+        width: 350px;
+    }
+}
+@media(max-width:365px){
+    .login{
+        width: 300px;
+    }
+    .login-forgot p,.login-account p{
+        font-size: 1rem;
+    }
+    .login-forgot a,.login-account a{
+        font-size: 1rem;
+    }
+    .login-btn{
+        font-size: 1rem;
+    }
+    .login-input input {
+        padding-left: 5px;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:310px){
+    .login{
+        width: 220px;
     }
 }
