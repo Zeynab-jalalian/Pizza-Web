@@ -16,4 +16,4 @@ document.addEventListener('click', function(event) {
         document.querySelector('.personal-account').classList.remove('open');
     }
 });
-/* login */
+
