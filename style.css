@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* header-top */
+
+.header-top {
+    background: #ffc7b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-container{
+    position: relative;
+    display: inline-block;
+}
+.phone-dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffc7b1;
+    border: 1px solid red;
+    border-radius: 5px;
+    z-index: 1;
+}
+.phone-dropdown-menu a{
+    display: block;
+    padding: 8px;
+    color: red;
+    border-bottom: 1px solid #9c9c9c;
+}
+.phone-container.open .phone-dropdown-menu{
+    display: block;
+}
+.phone-dropdown-menu a:last-child{
+    border-bottom: none;
+}
+.phone-dropdown-menu a:hover{
+    background: #ff964f;
+}
+.phone-container{
+    margin: 0 20px;
+}
+.header-top-left .location{
+    font-weight: 600;
+}
+.phone-number{
+    color: red;
+    font-size: 1rem;
+}
+.phone-icon{
+    color: red;
+    font-size: 1.1rem;
+    user-select: none;
+}
+.phone-dropdown-icon{
+    color: red;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
