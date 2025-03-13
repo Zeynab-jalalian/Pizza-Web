@@ -198,11 +198,9 @@ a{
     font-size: 1.1rem;
     margin-bottom: 30px;
     font-weight: 600;
-    cursor: pointer;
+    opacity: 0.5;
+    cursor: no-drop;
     transition: 0.3s;
-}
-.login-btn:hover{
-    background: #000;
 }
 .login-forgot{
     display: flex;
