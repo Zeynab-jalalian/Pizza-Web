@@ -148,4 +148,7 @@ a{
     .instagram{
         display: none;
     }
+    .account-dropdown-menu{
+        left:-100%;
+    }
 }
