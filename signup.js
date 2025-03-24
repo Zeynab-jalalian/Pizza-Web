@@ -49,26 +49,31 @@ document.getElementById("signup-pass-confirm").addEventListener("input",function
 })
 // validation Name
 document.getElementById("signup-name").addEventListener("input",function(){
-    let nameInput=this.value.trim()
-   if(nameInput===""){
-    this.style.borderBottom = "2px solid #000"; 
-   }else{
-    this.style.borderBottom = "2px solid green"; 
-   }
-    toggleSignupButton();
+    let nameInput = this.value.trim();
+    let namePattern = /^[a-zA-Z]{3,}$/;  
+
+    if (!namePattern.test(nameInput)) {
+        this.style.borderBottom = "2px solid red"; 
+    } else {
+        this.style.borderBottom = "2px solid green"; 
+    } if (nameInput == "") {
+        this.style.borderBottom = "1px solid #000"; 
+    }
+    
+    toggleSignupButton(); 
 })
 //Signup status
 function toggleSignupButton() {
-    let name=document.getElementById("signup-name").value.trim();
+    const name=document.getElementById("signup-name").value.trim();
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-pass").value.trim();
     const ConfirmPassword=document.getElementById("signup-pass-confirm").value.trim();
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordPattern = /^.{8,}$/;
+    const namePattern = /^[a-zA-Z]{3,}$/;  
 
-
-    if (emailPattern.test(email) && passwordPattern.test(password) && password===ConfirmPassword && email !== "" && password !== "" && ConfirmPassword!=="" && name!=="") {
+    if (namePattern.test(name) && emailPattern.test(email) && passwordPattern.test(password) && password===ConfirmPassword && email !== "" && password !== "" && ConfirmPassword!=="" && name!=="") {
         document.querySelector(".signup-btn").disabled = false;
         document.querySelector(".signup-btn").style.opacity = "1"; 
         document.querySelector(".signup-btn").style.cursor = "pointer"; 
@@ -78,3 +83,14 @@ function toggleSignupButton() {
         document.querySelector(".signup-btn").style.cursor = "no-drop"; 
     }
 }
+//click on signup btn
+document.querySelector(".signup-btn").addEventListener("click", function() {
+    if (!this.disabled) {
+        const previousPage = document.referrer; 
+        if (previousPage.includes("Login.html")) {
+            window.location.href = "index.html"; 
+        } else {
+            window.location.href = previousPage || "index.html"; 
+        }
+    }
+});
