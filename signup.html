@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Welcome!</title>
 </head>
-<body>
-    
+<body class="body">
+    <div class="signup">
+        <h2>Sign Up</h2>
+        <form action="#">
+            <div class="signup-input">
+                <input type="text" placeholder="Name" id="signup-name">
+            </div>
+            <div class="signup-input">
+                <input type="Email" placeholder="email" id="signup-email">
+            </div>
+            <div class="signup-input">
+                <input type="password" placeholder="Password" id="signup-pass">
+            </div>
+        </form>
+        <button class="signup-btn" disabled>Sign Up</button>
+        <div class="signup-rem">
+            <input type="checkbox" id="check" checked>
+            <label for="check">Remember Me</label>
+        </div>
+    </div>
 </body>
 </html>
