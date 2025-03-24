@@ -57,7 +57,11 @@ function toggleLoginButton() {
 //click on login btn
 document.querySelector(".login-btn").addEventListener("click", function() {
     if (!this.disabled) {
-        const previousPage = document.referrer || "index.html"; 
-        window.location.href = previousPage;
+        const previousPage = document.referrer; 
+        if (previousPage.includes("signup.html")) {
+            window.location.href = "index.html"; 
+        } else {
+            window.location.href = previousPage || "index.html"; 
+        }
     }
 });
