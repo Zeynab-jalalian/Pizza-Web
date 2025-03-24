@@ -322,10 +322,47 @@ a{
 }
 .signup-rem{
     padding-left: 15px;
+    margin-bottom: 20px;
 }
 .signup-rem label,.signup-rem input{
    cursor: pointer;
 }
 .signup-rem #check{
     accent-color: #750000cf;
+}
+.signup-or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.signup-or hr{
+    flex: 1;
+    border: none;
+    border-top: 1px solid #979797;
+    margin: 0 10px;
+}
+.signup-or span{
+    color: #333;
+    font-weight: 900;
+}
+.signup-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.signup-login p{
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.signup-login a{
+    color:red;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.signup-login a:hover{
+    text-decoration: underline;
 }
