@@ -435,11 +435,13 @@ a{
     background: #650d0d;
     color: white;
     font-size: 1rem;
-    cursor: pointer;
+    opacity: 0.5;
+    cursor: no-drop;
     transition: 0.3s;
    }
    .forget-pass .forgot-password-btn button:hover{
-    background: red;
+opacity: 1;
+cursor: pointer;
    }
    .forget-pass a{
     color: red;
