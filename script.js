@@ -16,4 +16,10 @@ document.addEventListener('click', function(event) {
         document.querySelector('.personal-account').classList.remove('open');
     }
 });
-
+/* header-nav */
+document.querySelectorAll(".header-nav  li a").forEach(item=>{
+    item.addEventListener("click",function(){
+        document.querySelector(".header-nav li a.active")?.classList.remove("active");
+        this.classList.add("active");
+    })
+})
