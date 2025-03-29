@@ -395,3 +395,86 @@ a{
         width: 220px;
     }
 }
+/* forgot-password.html */
+
+.forget-pass{
+    background: white;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+   .forget-pass h1{
+       text-align: center;
+       margin-bottom: 30px;
+   }
+   .forget-pass p{
+    margin: 20px auto;
+    color: #111;
+   }
+   .forget-pass input{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    font-size:1rem;
+   }
+   .forget-pass .forgot-password-btn button{
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    height: 45px;
+    width: 100%;
+    margin: 20px auto;
+    background: #650d0d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   .forget-pass .forgot-password-btn button:hover{
+    background: red;
+   }
+   .forget-pass a{
+    color: red;
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+   }
+   .forget-pass a:hover{
+    text-decoration: underline;
+   }
+   /*forgot-password responsive*/
+   @media(max-width:550px){
+    .forget-pass{
+        width: 400px;
+    }
+}
+@media(max-width:430px){
+    .forget-pass{
+        width: 350px;
+    }
+}
+@media(max-width:365px){
+    .forget-pass{
+        width: 300px;
+    }
+    .forget-pass input {
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:310px){
+    .forget-pass{
+        width: 220px;
+    }
+}
