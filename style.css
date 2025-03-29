@@ -539,6 +539,14 @@ a{
  cursor: pointer;
  display: none;
 }
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo .menu-hamburger{
+    margin-right: 10px;
+}
 /* header-bottom responsive*/
 @media(max-width:768px){
  .menu-hamburger{
