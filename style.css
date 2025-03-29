@@ -439,10 +439,6 @@ a{
     cursor: no-drop;
     transition: 0.3s;
    }
-   .forget-pass .forgot-password-btn button:hover{
-opacity: 1;
-cursor: pointer;
-   }
    .forget-pass a{
     color: red;
     text-align: center;
@@ -455,6 +451,14 @@ cursor: pointer;
    }
    .forget-pass a:hover{
     text-decoration: underline;
+   }
+   #new-password{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: none;
    }
    /*forgot-password responsive*/
    @media(max-width:550px){

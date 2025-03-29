@@ -31,3 +31,9 @@ function toggleLoginButton() {
         document.querySelector(".forgot-pass-btn").style.cursor = "no-drop"; 
     }
 }
+document.querySelector(".forgot-pass-btn").addEventListener("click",function(e){
+    e.preventDefault();
+   document.getElementById("new-password").style.display="block";
+})
+
+
