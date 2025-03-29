@@ -23,3 +23,19 @@ document.querySelectorAll(".header-nav  li a").forEach(item=>{
         this.classList.add("active");
     })
 })
+
+
+function toggleMenu() {
+    let menu = document.querySelector(".header-nav");
+    let icon = document.getElementById("hamburger-icon");
+
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+    } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    }
+}

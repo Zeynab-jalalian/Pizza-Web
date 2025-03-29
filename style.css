@@ -534,3 +534,40 @@ a{
     background: green;
     transform: scale(1.1);
 }
+.menu-hamburger{
+ font-size: 30px;
+ cursor: pointer;
+ display: none;
+}
+/* header-bottom responsive*/
+@media(max-width:768px){
+ .menu-hamburger{
+    display: block;
+ }
+ .header-nav{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #710000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    transition: 0.3s;
+ }
+ .header-nav li{
+    margin: 20px;
+    text-align: center;
+ }
+ .header-nav a{
+    font-size: 20px;
+    display: block;
+ }
+ .header-nav li a{
+    color: white;
+ }
+ .header-nav.active{
+    right: 0;
+ }
+}
